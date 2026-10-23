@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full Stack Developer Salary in India: Fresher to Experienced Guide | Salary Elevator</title>
+<meta name="description" content="Ride the salary elevator and explore full stack developer salary in India from fresher to senior, compare MERN, Java, Python and PHP lanes and decode your offer letter.">
+<meta name="theme-color" content="#0b6b63">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0b6b63; --teal-d:#06403b; --teal-l:#13a79a;
+  --sand:#f3e9d2; --sand-d:#e6d5ae; --white:#ffffff;
+  --neon:#e4ff1a; --ink:#0a2b28; --muted:#47615d;
+  --r:22px; --shadow:0 18px 40px -18px rgba(6,64,59,.45);
+  --hd:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --bd:"DM Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--bd);background:var(--sand);color:var(--ink);line-height:1.65;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--hd);line-height:1.1;letter-spacing:-.02em}
+.hl{background:var(--neon);color:var(--teal-d);padding:0 .22em;border-radius:.2em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.progress{position:fixed;top:0;left:0;height:5px;width:0;background:var(--neon);z-index:100;box-shadow:0 0 12px var(--neon)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(243,233,210,.88);backdrop-filter:blur(12px);border-bottom:2px solid var(--teal-d)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--hd);font-weight:800;font-size:1.2rem;color:var(--teal-d)}
+.logo i{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--teal);color:var(--neon);font-style:normal;box-shadow:3px 3px 0 var(--teal-d)}
+nav ul{display:flex;gap:6px;list-style:none}
+nav a.l{text-decoration:none;font-weight:700;font-size:.95rem;padding:8px 14px;border-radius:999px;transition:.2s}
+nav a.l:hover{background:var(--teal);color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px;border:2px solid var(--teal-d);background:var(--neon);color:var(--teal-d);box-shadow:4px 4px 0 var(--teal-d);transition:.18s;cursor:pointer;font-family:var(--bd);font-size:1rem}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--teal-d)}
+.btn.alt{background:var(--white)}
+.btn.dark{background:var(--teal);color:var(--white)}
+.burger{display:none;background:var(--teal);color:var(--neon);border:2px solid var(--teal-d);border-radius:12px;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+/* hero */
+.hero{position:relative;padding:70px 0 90px;background:
+  radial-gradient(circle at 85% 10%,rgba(228,255,26,.55),transparent 38%),
+  linear-gradient(160deg,var(--teal) 0%,var(--teal-d) 100%);color:var(--white);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -5% -1px -5%;height:70px;background:var(--sand);border-radius:50% 50% 0 0/100% 100% 0 0}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,#000 30%,transparent)}
+.hero-in{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.kicker{display:inline-block;background:var(--sand);color:var(--teal-d);font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:999px;margin-bottom:20px;border:2px solid var(--teal-d)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);margin-bottom:20px}
+.hero p.lead{font-size:1.15rem;max-width:560px;color:#d9f1ee;margin-bottom:30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.stat{background:var(--white);color:var(--teal-d);border-radius:var(--r);padding:20px;box-shadow:var(--shadow);border:2px solid var(--teal-d);animation:bob 5s ease-in-out infinite}
+.stat:nth-child(2){animation-delay:-1.2s;background:var(--neon)}
+.stat:nth-child(3){animation-delay:-2.4s;background:var(--sand)}
+.stat:nth-child(4){animation-delay:-3.6s}
+.stat b{display:block;font-family:var(--hd);font-size:2.1rem}
+.stat span{font-size:.9rem;font-weight:500}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-1deg)}}
+/* ticker */
+.ticker{background:var(--neon);color:var(--teal-d);border-block:2px solid var(--teal-d);overflow:hidden;white-space:nowrap;font-family:var(--hd);font-weight:800;font-size:1.05rem}
+.ticker div{display:inline-block;padding:12px 0;animation:slide 38s linear infinite}
+.ticker span{margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:84px 0}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head .tag{font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.2rem);margin:10px 0 14px;color:var(--teal-d)}
+.sec-head p{color:var(--muted);font-size:1.08rem}
+.reveal{opacity:0;transform:translateY(34px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+/* elevator */
+.lift{display:grid;grid-template-columns:330px 1fr;gap:34px;align-items:stretch}
+.tower{position:relative;background:var(--teal-d);border-radius:var(--r);padding:16px;border:2px solid var(--teal-d);box-shadow:var(--shadow)}
+.floors{position:relative;display:flex;flex-direction:column}
+.floor{height:76px;display:flex;align-items:center;gap:12px;padding:0 14px;border:0;background:transparent;color:#bfe3df;font-family:var(--bd);font-weight:700;font-size:.95rem;text-align:left;cursor:pointer;border-bottom:2px dashed rgba(255,255,255,.18);position:relative;z-index:2;transition:.2s;border-radius:12px}
+.floor:last-child{border-bottom:0}
+.floor em{font-style:normal;font-family:var(--hd);font-size:1.4rem;color:var(--neon);width:30px}
+.floor:hover{color:var(--white)}
+.floor.on{color:var(--teal-d)}
+.floor.on em{color:var(--teal-d)}
+.car{position:absolute;left:16px;right:16px;height:76px;top:16px;background:var(--neon);border-radius:14px;z-index:1;transition:transform .8s cubic-bezier(.65,0,.25,1);box-shadow:0 0 28px rgba(228,255,26,.65)}
+.car::after{content:"";position:absolute;right:12px;top:50%;width:12px;height:12px;border-radius:50%;background:var(--teal);transform:translateY(-50%);animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+.panel{background:var(--white);border:2px solid var(--teal-d);border-radius:var(--r);padding:34px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:18px}
+.panel .stage{display:inline-block;align-self:flex-start;background:var(--teal);color:var(--neon);font-weight:700;padding:5px 14px;border-radius:999px;font-size:.85rem}
+.panel h3{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--teal-d)}
+.big{font-family:var(--hd);font-weight:800;font-size:clamp(2.6rem,6vw,4.4rem);color:var(--teal-d);line-height:1}
+.big small{font-size:.35em;font-weight:700;color:var(--teal)}
+.scale{position:relative;height:22px;background:var(--sand);border-radius:999px;border:2px solid var(--teal-d);overflow:hidden}
+.scale i{position:absolute;top:0;bottom:0;background:linear-gradient(90deg,var(--teal-l),var(--neon));transition:.8s cubic-bezier(.65,0,.25,1)}
+.scale-labels{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);font-weight:500;margin-top:-8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mini{background:var(--sand);border-radius:16px;padding:16px}
+.mini b{display:block;color:var(--teal);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+input[type=range]{width:100%;accent-color:var(--teal)}
+.hint{font-size:.85rem;color:var(--muted)}
+/* stacks */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--white);border:2px solid var(--teal-d);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:12px;box-shadow:6px 6px 0 var(--teal-d);transition:.22s}
+.card:hover{transform:translate(-4px,-4px) rotate(-.6deg);box-shadow:11px 11px 0 var(--teal-d)}
+.card .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:var(--neon);font-size:1.6rem;border:2px solid var(--teal-d)}
+.card h3{font-size:1.4rem;color:var(--teal-d)}
+.card p{color:var(--muted);font-size:.95rem}
+.rg{font-size:.88rem}
+.rg div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--sand-d);padding:6px 0}
+.rg b{color:var(--teal)}
+.card a.go{margin-top:auto;font-weight:700;color:var(--teal-d);text-decoration:none;border-bottom:3px solid var(--neon);align-self:flex-start}
+.card a.go:hover{background:var(--neon)}
+/* decoder */
+.decoder{background:var(--teal);border-radius:32px;padding:clamp(28px,5vw,56px);color:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:40px;border:2px solid var(--teal-d);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.decoder::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--neon);opacity:.14;right:-80px;top:-80px}
+.decoder h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:12px}
+.decoder p{color:#d1ece9}
+.field{margin-top:18px}
+.field label{display:flex;justify-content:space-between;font-weight:700;margin-bottom:6px}
+.field label span{color:var(--neon)}
+.result{background:var(--white);color:var(--teal-d);border-radius:var(--r);padding:28px;position:relative;z-index:1}
+.result .total{font-family:var(--hd);font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem)}
+.result .row{display:flex;justify-content:space-between;border-bottom:1px dashed var(--sand-d);padding:10px 0;font-size:.95rem}
+.verdict{margin-top:16px;background:var(--neon);padding:14px 16px;border-radius:14px;font-weight:700;font-size:.95rem}
+/* learn / reads */
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.book{background:var(--teal-d);color:var(--white);border-radius:var(--r);padding:26px;text-decoration:none;display:flex;flex-direction:column;gap:12px;min-height:250px;transition:.25s;border:2px solid var(--teal-d);position:relative;overflow:hidden}
+.book:hover{transform:translateY(-8px);background:var(--teal)}
+.book .t{align-self:flex-start;background:var(--neon);color:var(--teal-d);font-weight:700;font-size:.75rem;padding:4px 12px;border-radius:999px}
+.book h3{font-size:1.25rem}
+.book p{color:#c6e6e2;font-size:.92rem}
+.book .arrow{margin-top:auto;font-weight:700;color:var(--neon)}
+.reads{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.read{background:var(--white);border:2px solid var(--teal-d);border-radius:var(--r);padding:24px;text-decoration:none;display:flex;flex-direction:column;gap:10px;transition:.22s;position:relative}
+.read:nth-child(1){background:var(--neon);grid-column:span 2}
+.read:hover{transform:rotate(-1deg) translateY(-6px);box-shadow:var(--shadow)}
+.read small{font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.read h3{font-size:1.25rem;color:var(--teal-d)}
+.read p{font-size:.93rem;color:var(--muted)}
+.read:nth-child(1) p{color:var(--teal-d)}
+/* faq */
+details{background:var(--white);border:2px solid var(--teal-d);border-radius:18px;padding:18px 22px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:700;font-family:var(--hd);font-size:1.15rem;color:var(--teal-d);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-size:1.5rem;color:var(--teal);transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:10px;color:var(--muted)}
+/* final cta */
+.final{background:var(--neon);border:2px solid var(--teal-d);border-radius:32px;padding:clamp(30px,6vw,64px);text-align:center;box-shadow:8px 8px 0 var(--teal-d)}
+.final h2{font-size:clamp(2rem,5vw,3.4rem);color:var(--teal-d);margin-bottom:14px}
+.final p{max-width:620px;margin:0 auto 26px;color:var(--teal-d)}
+.final .cta-row{justify-content:center}
+/* footer */
+footer{background:var(--teal-d);color:#bfe3df;padding:56px 0 30px;margin-top:84px;position:relative}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+footer h4{font-family:var(--hd);color:var(--neon);margin-bottom:12px;font-size:1.05rem}
+footer a{display:block;text-decoration:none;padding:4px 0;font-size:.95rem}
+footer a:hover{color:var(--neon)}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:34px;padding-top:20px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;background:var(--neon);color:var(--teal-d);border:2px solid var(--teal-d);font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:60;box-shadow:3px 3px 0 var(--teal-d)}
+.top.show{opacity:1;pointer-events:auto}
+/* responsive */
+@media(max-width:1020px){
+  .cards,.shelf{grid-template-columns:repeat(2,1fr)}
+  .reads{grid-template-columns:1fr 1fr}
+  .read:nth-child(1){grid-column:span 2}
+  .hero-in,.decoder,.lift{grid-template-columns:1fr}
+  .tower{max-width:420px}
+}
+@media(max-width:760px){
+  .burger{display:block}
+  nav ul{position:absolute;top:70px;left:0;right:0;background:var(--sand);flex-direction:column;padding:14px 4%;border-bottom:2px solid var(--teal-d);display:none}
+  nav ul.open{display:flex}
+  .nav .btn.hide{display:none}
+  .cards,.shelf,.reads,.two,.f-grid{grid-template-columns:1fr}
+  .read:nth-child(1){grid-column:auto}
+  section{padding:64px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><i>&uarr;</i> Salary Elevator</a>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a class="l" href="#elevator">Elevator</a></li>
+        <li><a class="l" href="#stacks">Stack Lanes</a></li>
+        <li><a class="l" href="#decoder">Offer Decoder</a></li>
+        <li><a class="l" href="#learn">Learn</a></li>
+        <li><a class="l" href="#reads">Reads</a></li>
+      </ul>
+    </nav>
+    <a class="btn hide" href="https://www.justacademy.co/blog-detail/full-stack-developer-salary-in-india-fresher-to-experienced-guide" target="_blank" rel="noopener">Read the guide</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:70px">
+  <div class="grid-bg"></div>
+  <div class="wrap hero-in">
+    <div>
+      <span class="kicker">Full Stack Developer Salary in India</span>
+      <h1>How high can your <span class="hl">full stack</span> career climb?</h1>
+      <p class="lead">Fresher offers, mid career jumps and senior packages, all in one playful ride. Hop in the elevator, pick your floor and see what the market has historically paid at every stage.</p>
+      <div class="cta-row">
+        <a class="btn" href="#elevator">Ride the elevator &darr;</a>
+        <a class="btn alt" href="https://www.justacademy.co/blog-detail/full-stack-developer-salary-in-india-fresher-to-experienced-guide" target="_blank" rel="noopener">Fresher to Experienced Guide</a>
+      </div>
+    </div>
+    <div class="stats" aria-label="Quick facts">
+      <div class="stat"><b data-count="3">0</b><span>LPA is where many fresher offers begin</span></div>
+      <div class="stat"><b data-count="14">0</b><span>LPA is common around four to five years</span></div>
+      <div class="stat"><b data-count="35">0</b><span>LPA tops many senior bands</span></div>
+      <div class="stat"><b data-count="60">0</b><span>LPA plus at the very top of the market</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+<section id="elevator">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Floor by floor</span>
+      <h2>Step into the <span class="hl">salary elevator</span></h2>
+      <p>Tap a floor or drag the slider. Every floor shows an indicative yearly range, what employers look for and one honest tip. Ranges are approximate and shift with company, city and skills.</p>
+    </div>
+    <div class="lift reveal">
+      <div class="tower">
+        <div class="floors" id="floors">
+          <div class="car" id="car"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <span class="stage" id="pStage">Floor 1</span>
+        <h3 id="pTitle">Fresher</h3>
+        <div class="big" id="pRange">3 to 6 <small>LPA</small></div>
+        <div>
+          <div class="scale"><i id="bar"></i></div>
+          <div class="scale-labels"><span>0</span><span>15</span><span>30</span><span>45</span><span>60+</span></div>
+        </div>
+        <div class="two">
+          <div class="mini"><b>What gets you hired</b><span id="pSkills"></span></div>
+          <div class="mini"><b>Typical roles</b><span id="pRoles"></span></div>
+        </div>
+        <div class="mini" style="background:var(--neon)"><b style="color:var(--teal-d)">Honest tip</b><span id="pTip"></span></div>
+        <div>
+          <input type="range" id="slider" min="0" max="4" step="1" value="0" aria-label="Career stage">
+          <p class="hint">Drag to travel between stages. Strong projects can lift a fresher offer well above the typical band.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stacks" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Pick your lane</span>
+      <h2>Four stack lanes, <span class="hl">one destination</span></h2>
+      <p>Your stack shapes the kind of employers you meet more than the size of your paycheck. Here is how each lane has typically behaved, in lakhs per annum.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ic">&#9889;</div>
+        <h3>MERN and JavaScript</h3>
+        <p>MongoDB, Express, React and Node. One language from browser to server, loved by startups and product teams.</p>
+        <div class="rg"><div><span>Entry</span><b>3.5 to 8</b></div><div><span>Experienced</span><b>12 to 30</b></div></div>
+        <a class="go" href="https://www.justacademy.co/job-bootcamp-detail/delhi/mern-stack-developer-course-in-delhi-live-online-react-full-stack-product-development-training" target="_blank" rel="noopener">Explore the MERN course &rarr;</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic">&#9749;</div>
+        <h3>Java Full Stack</h3>
+        <p>Spring Boot with Angular or React. Steady demand in banks, enterprises and large service firms.</p>
+        <div class="rg"><div><span>Entry</span><b>3.5 to 7</b></div><div><span>Experienced</span><b>12 to 32</b></div></div>
+        <a class="go" href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-developer-pro-bootcamp-in-delhi-live-online-software-engineering-product-development-program" target="_blank" rel="noopener">See the Full Stack Pro bootcamp &rarr;</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic">&#128013;</div>
+        <h3>Python Full Stack</h3>
+        <p>Django or FastAPI with a modern front end. A favourite where web meets data and automation.</p>
+        <div class="rg"><div><span>Entry</span><b>3.5 to 7</b></div><div><span>Experienced</span><b>12 to 30</b></div></div>
+        <a class="go" href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi" target="_blank" rel="noopener">Python training in Delhi &rarr;</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic">&#128736;</div>
+        <h3>PHP Full Stack</h3>
+        <p>Laravel and MySQL. Popular with agencies and small businesses, with a short route to freelance work.</p>
+        <div class="rg"><div><span>Entry</span><b>2.5 to 5</b></div><div><span>Experienced</span><b>8 to 20</b></div></div>
+        <a class="go" href="https://www.justacademy.co/blog-detail/full-stack-developer-tutorial-for-beginners" target="_blank" rel="noopener">Start with the beginner tutorial &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="decoder" style="padding-top:20px">
+  <div class="wrap">
+    <div class="decoder reveal">
+      <div>
+        <h2>Offer letter <span class="hl">decoder</span></h2>
+        <p>Two offers can both say ten lakhs and feel completely different. Plug in your numbers and see how much of your first year package is guaranteed and how much is a maybe.</p>
+        <div class="field"><label for="fx">Fixed pay <span id="fxv">8 LPA</span></label><input type="range" id="fx" min="2" max="60" step="0.5" value="8"></div>
+        <div class="field"><label for="vr">Variable pay <span id="vrv">10 percent of fixed</span></label><input type="range" id="vr" min="0" max="50" step="1" value="10"></div>
+        <div class="field"><label for="jb">Joining bonus <span id="jbv">0.5 lakh</span></label><input type="range" id="jb" min="0" max="10" step="0.25" value="0.5"></div>
+      </div>
+      <div class="result" aria-live="polite">
+        <small>First year total</small>
+        <div class="total" id="total">0</div>
+        <div class="row"><span>Fixed per month, before tax</span><b id="mon">0</b></div>
+        <div class="row"><span>Variable and bonus share</span><b id="risk">0</b></div>
+        <div class="row"><span>Guaranteed share</span><b id="safe">0</b></div>
+        <div class="verdict" id="verdict"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="learn" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Level up</span>
+      <h2>Skills that <span class="hl">move the number</span></h2>
+      <p>Live online, instructor led and mentor led learning paths for Delhi learners who want structure, feedback and real project work.</p>
+    </div>
+    <div class="shelf">
+      <a class="book reveal" href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-developer-pro-bootcamp-in-delhi-live-online-software-engineering-product-development-program" target="_blank" rel="noopener"><span class="t">Bootcamp</span><h3>Full Stack Developer Pro</h3><p>Live online software engineering and product development program built around real projects.</p><span class="arrow">Open bootcamp &rarr;</span></a>
+      <a class="book reveal" href="https://www.justacademy.co/job-bootcamp-detail/delhi/mern-stack-developer-course-in-delhi-live-online-react-full-stack-product-development-training" target="_blank" rel="noopener"><span class="t">Bootcamp</span><h3>MERN Stack Developer</h3><p>React, Node and MongoDB through live full stack product development training.</p><span class="arrow">Open bootcamp &rarr;</span></a>
+      <a class="book reveal" href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi" target="_blank" rel="noopener"><span class="t">Course</span><h3>Python Training in Delhi</h3><p>Build the language foundation that every Python web framework sits on.</p><span class="arrow">Open course &rarr;</span></a>
+      <a class="book reveal" href="https://www.justacademy.co/course-detail/delhi/javascript-training-in-delhi" target="_blank" rel="noopener"><span class="t">Course</span><h3>JavaScript Training in Delhi</h3><p>Sharpen async code, modules and the event loop that modern web work depends on.</p><span class="arrow">Open course &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="reads" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Keep reading</span>
+      <h2>Five reads for the <span class="hl">curious climber</span></h2>
+      <p>Short, practical articles that go deeper on salaries, projects and the skills behind them.</p>
+    </div>
+    <div class="reads">
+      <a class="read reveal" href="https://www.justacademy.co/blog-detail/full-stack-developer-salary-in-india-fresher-to-experienced-guide" target="_blank" rel="noopener"><small>Main guide</small><h3>Full Stack Developer Salary in India: Fresher to Experienced Guide</h3><p>The complete walk through of every stage, from the first offer letter to senior packages and the habits that grow pay.</p></a>
+      <a class="read reveal" href="https://www.justacademy.co/blog-detail/full-stack-developer-tutorial-for-beginners" target="_blank" rel="noopener"><small>Beginners</small><h3>Full Stack Developer Tutorial for Beginners</h3><p>A gentle start if the jargon still feels heavy.</p></a>
+      <a class="read reveal" href="https://www.justacademy.co/blog-detail/full-stack-mobile-app-developer" target="_blank" rel="noopener"><small>Mobile</small><h3>Full Stack Mobile App Developer</h3><p>How web skills stretch into phones and apps.</p></a>
+      <a class="read reveal" href="https://www.justacademy.co/blog-detail/javascript-es6-features-every-developer-must-know" target="_blank" rel="noopener"><small>JavaScript</small><h3>JavaScript ES6 Features Every Developer Must Know</h3><p>The language features most frameworks quietly assume.</p></a>
+      <a class="read reveal" href="https://www.justacademy.co/blog-detail/mern-stack-projects-ideas-for-job-ready-developers" target="_blank" rel="noopener"><small>Projects</small><h3>MERN Stack Projects Ideas for Job Ready Developers</h3><p>Portfolio ideas that make recruiters pause.</p></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Quick answers</span>
+      <h2>Questions people <span class="hl">keep asking</span></h2>
+    </div>
+    <div class="reveal">
+      <details><summary>What does a fresher full stack developer earn in India?</summary><p>Most fresher offers fall between three and six lakhs a year, and candidates with strong deployed projects often reach six to ten lakhs at product focused companies. It varies with company type, city and interview performance.</p></details>
+      <details><summary>Does my stack decide my salary?</summary><p>It influences the kind of employers you meet, but depth matters more. A strong developer in a quieter stack can out earn an average one in a famous stack.</p></details>
+      <details><summary>How long does it take to become job ready?</summary><p>Most dedicated learners need six to twelve months of steady practice. Ninety focused minutes a day with regular mentor feedback beats an occasional weekend marathon.</p></details>
+      <details><summary>Are these numbers guaranteed?</summary><p>No. They are indicative ranges based on how the Indian market has generally behaved. Always compare with live job postings and people in your own network.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px;padding-bottom:0">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>Ready to press the next floor button?</h2>
+      <p>Build the skills, the projects and the confidence that employers pay for, with live interactive guidance from mentors.</p>
+      <div class="cta-row">
+        <a class="btn dark" href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-developer-pro-bootcamp-in-delhi-live-online-software-engineering-product-development-program" target="_blank" rel="noopener">Explore Full Stack Pro bootcamp</a>
+        <a class="btn alt" href="https://www.justacademy.co/blog-detail/full-stack-developer-salary-in-india-fresher-to-experienced-guide" target="_blank" rel="noopener">Read the salary guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo" href="#top" style="color:var(--white);padding:0"><i>&uarr;</i> Salary Elevator</a>
+        <p style="margin-top:12px;max-width:340px">A playful guide to full stack developer salary in India, from fresher to experienced. Indicative ranges only, not promises.</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <a href="https://www.justacademy.co/job-bootcamp-detail/delhi/full-stack-developer-pro-bootcamp-in-delhi-live-online-software-engineering-product-development-program" target="_blank" rel="noopener">Full Stack Developer Pro</a>
+        <a href="https://www.justacademy.co/job-bootcamp-detail/delhi/mern-stack-developer-course-in-delhi-live-online-react-full-stack-product-development-training" target="_blank" rel="noopener">MERN Stack Developer</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi" target="_blank" rel="noopener">Python Training in Delhi</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/javascript-training-in-delhi" target="_blank" rel="noopener">JavaScript Training in Delhi</a>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <a href="https://www.justacademy.co/blog-detail/full-stack-developer-salary-in-india-fresher-to-experienced-guide" target="_blank" rel="noopener">Salary Guide</a>
+        <a href="https://www.justacademy.co/blog-detail/full-stack-developer-tutorial-for-beginners" target="_blank" rel="noopener">Beginner Tutorial</a>
+        <a href="https://www.justacademy.co/blog-detail/full-stack-mobile-app-developer" target="_blank" rel="noopener">Mobile App Developer</a>
+        <a href="https://www.justacademy.co/blog-detail/javascript-es6-features-every-developer-must-know" target="_blank" rel="noopener">JavaScript ES6</a>
+        <a href="https://www.justacademy.co/blog-detail/mern-stack-projects-ideas-for-job-ready-developers" target="_blank" rel="noopener">MERN Project Ideas</a>
+      </div>
+    </div>
+    <div class="copy"><span>&copy; Salary Elevator. Figures are approximate and for education only.</span><span>Made with teal, sand and a lot of neon.</span></div>
+  </div>
+</footer>
+<button class="top" id="top-btn" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function(){
+  var stages=[
+    {t:"Fresher",y:"0 to 1 year",min:3,max:6,lbl:"3 to 6",skills:"Deployed projects, one language known well, Git, basic databases and clear communication.",roles:"Associate software engineer, trainee developer, junior full stack developer.",tip:"Strong projects can push a first offer to six to ten lakhs. Pick the team with great mentors over the single highest number."},
+    {t:"Early Career",y:"2 to 3 years",min:8,max:14,lbl:"8 to 14",skills:"Ownership of features, API design, testing habits and comfort with deployment.",roles:"Software engineer, full stack developer, application developer.",tip:"Volunteer for the messy problem nobody wants. Ownership is what moves pay in these years."},
+    {t:"Mid Career",y:"4 to 5 years",min:14,max:20,lbl:"14 to 20",skills:"System design basics, performance, security, database optimisation and mentoring juniors.",roles:"Full stack engineer, module owner, tech lead in smaller teams.",tip:"Switching jobs with preparation often brings a ten to forty percent jump. Staying can win if scope keeps growing."},
+    {t:"Senior",y:"6 to 9 years",min:18,max:35,lbl:"18 to 35",skills:"Architecture judgment, code reviews, cloud and CI pipelines, and clear stakeholder communication.",roles:"Senior full stack engineer, lead engineer, staff engineer track.",tip:"Seniors are paid for judgment. Collect stories with numbers that show the impact you made."},
+    {t:"Principal and Architect",y:"10 plus years",min:40,max:60,lbl:"40 to 60+",skills:"Domain depth, platform thinking, mentoring at scale and decisions that shape products.",roles:"Principal engineer, architect, engineering manager.",tip:"Choose maker or manager based on what energises you. Both can pay very well."}
+  ];
+  var floorsEl=document.getElementById('floors'),car=document.getElementById('car'),slider=document.getElementById('slider');
+  var g=function(i){return document.getElementById(i)};var els={stage:g('pStage'),title:g('pTitle'),range:g('pRange'),skills:g('pSkills'),roles:g('pRoles'),tip:g('pTip'),bar:g('bar')};
+  var order=stages.slice().reverse(),btns=[];
+  order.forEach(function(s,i){
+    var idx=stages.length-1-i;
+    var b=document.createElement('button');b.className='floor';b.type='button';
+    b.innerHTML='<em>'+(idx+1)+'</em><span>'+s.t+'<br><small style="font-weight:500;opacity:.8">'+s.y+'</small></span>';
+    b.addEventListener('click',function(){go(idx)});
+    floorsEl.appendChild(b);btns[idx]=b;
+  });
+  var cur=0;
+  function go(i){
+    cur=i;slider.value=i;
+    var fromTop=stages.length-1-i;
+    car.style.transform='translateY('+(fromTop*76)+'px)';
+    btns.forEach(function(b,k){b.classList.toggle('on',k===i)});
+    var s=stages[i];
+    els.stage.textContent='Floor '+(i+1)+' of '+stages.length;
+    els.title.textContent=s.t+' ('+s.y+')';
+    els.range.innerHTML=s.lbl+' <small>LPA</small>';
+    els.skills.textContent=s.skills;els.roles.textContent=s.roles;els.tip.textContent=s.tip;
+    els.bar.style.left=(s.min/65*100)+'%';els.bar.style.width=((s.max-s.min)/65*100)+'%';
+  }
+  slider.addEventListener('input',function(){go(+slider.value)});
+  go(0);
+
+  /* ticker */
+  var words=["full stack developer salary","entry level to senior","MERN","Java full stack","Python full stack","PHP full stack","live interactive sessions","mentor led learning","instructor led classes","real projects","offer letter decoder","Delhi NCR"];
+  var h='';for(var r=0;r<2;r++){words.forEach(function(w){h+='<span>'+w+'</span><span>&#9670;</span>'})}
+  document.getElementById('tick').innerHTML=h+h;
+
+  /* count up */
+  var counted=false;
+  function countUp(){
+    if(counted)return;counted=true;
+    document.querySelectorAll('[data-count]').forEach(function(n){
+      var to=+n.dataset.count,t0=null;
+      function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1300,1);n.textContent=Math.round(to*(1-Math.pow(1-p,3)))+(to>=60?'+':'');if(p<1)requestAnimationFrame(step)}
+      requestAnimationFrame(step);
+    });
+  }
+  setTimeout(countUp,400);
+
+  /* reveal */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+
+  /* progress + top */
+  var topBtn=document.getElementById('top-btn'),prog=document.getElementById('progress');
+  window.addEventListener('scroll',function(){
+    var d=document.documentElement,p=d.scrollTop/(d.scrollHeight-d.clientHeight)*100;
+    prog.style.width=p+'%';topBtn.classList.toggle('show',d.scrollTop>600);
+  },{passive:true});
+  topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  /* menu */
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false')}});
+
+  /* decoder */
+  var fx=document.getElementById('fx'),vr=document.getElementById('vr'),jb=document.getElementById('jb');
+  function fmt(n){return (Math.round(n*100)/100)+' lakh'}
+  function calc(){
+    var f=+fx.value,v=+vr.value,j=+jb.value;
+    var varAmt=f*v/100,total=f+varAmt+j,risk=varAmt+j;
+    document.getElementById('fxv').textContent=f+' LPA';
+    document.getElementById('vrv').textContent=v+' percent of fixed';
+    document.getElementById('jbv').textContent=fmt(j);
+    document.getElementById('total').textContent=fmt(total);
+    document.getElementById('mon').textContent='Rs '+Math.round(f*100000/12).toLocaleString('en-IN');
+    var rp=Math.round(risk/total*100);
+    document.getElementById('risk').textContent=rp+' percent';
+    document.getElementById('safe').textContent=(100-rp)+' percent';
+    var msg;
+    if(rp>=25)msg='A big slice depends on targets. Ask how variable pay was actually paid in the last two cycles.';
+    else if(rp>=10)msg='A healthy balance. Still confirm when the variable is paid and what it depends on.';
+    else msg='Mostly guaranteed pay. Check notice period terms and the learning budget too.';
+    document.getElementById('verdict').textContent=msg;
+  }
+  [fx,vr,jb].forEach(function(i){i.addEventListener('input',calc)});calc();
+})();
+</script>
+</body>
+</html>
